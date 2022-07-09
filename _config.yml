@@ -27,7 +27,7 @@ domain: "thomaskatkins.github.io" # the base hostname & protocol for your site, 
 github_username:  thomaskatkins
 
 # Build settings
-remote_theme: StartBootstrap/startbootstrap-clean-blog-jekyll
+remote_theme: ThomasKAtkins/startbootstrap-clean-blog-jekyll
 plugins:
   - jekyll-feed
 
