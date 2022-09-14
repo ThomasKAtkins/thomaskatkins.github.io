@@ -1,14 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
 
 body {
-    font-family: 'Open Sans', sans-serif !important;
+    font-family: 'Open Sans', !important;
   }
 
+h1 {
+  font-family: 'Open Sans' !important;
+}
+
 body {
-    background-color: #222423;
-    font-family: 'Lora', serif;
-    color: #fff;
+    color: rgb(0, 0, 0);
 }
 
 #navbar {
@@ -23,4 +25,36 @@ body {
   justify-content: space-between;
   padding-left: 20px;
   padding-right: 20px;
+}
+
+#imageCarousel {
+    width: 70%;
+    margin: auto;
+}
+
+.carousel-caption {
+    background-color: #eeeeeede;
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.2rem !important;
+}
+
+.caro-label {
+  color:#1f0b2f;
+}
+
+.card-header {
+    background-color: #503d61 !important;
+    color: white !important;
+}
+
+.card-header a {
+    color: white !important;
+}
+
+.btn-link {
+    color: white !important;
+}
+
+.card {
+    background-color: #eee !important;
 }

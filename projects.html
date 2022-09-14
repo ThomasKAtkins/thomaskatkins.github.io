@@ -11,21 +11,31 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #1f0b2f;">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav">
-                <a class="nav-item nav-link" href="index.html">Home</a>
-                <a class="nav-item nav-link" href="about.html">About</a>
-                <a class="nav-item nav-link" href="gallery.html">Gallery</a>
-                <a class="nav-item nav-link active" href="projects.html">Projects</a>
-              </div>
-            </div>
-          </nav>
+      <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #1f0b2f;">
+        <div class="container">
+            <a class="navbar-brand" href="#">Thomas Karl Atkins</a>
+            <ul class="nav navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-item nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-item nav-link" href="gallery.html">Gallery</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-item nav-link active" href="projects.html">Projects</a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-item nav-link" href="#"><img src="/images/DNA.svg" height="20px"/></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
         <div class="container-fluid">
+          <br>
         <h1>Projects</h1>
+        <br>
         <div id="accordion">
             <div class="card">
               <div class="card-header" id="headingOne">
@@ -36,9 +46,14 @@
                 </h5>
               </div>
           
-              <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
                 <div class="card-body">
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                  <p>As part of the work of <a href="http://compbio.cs.umn.edu/">Dr. Rui Kuang's lab</a>, I extended a tensor decomposition and graph regularization based algorithm for spatial transcriptomic data imputation from two to three spatial dimensions, making it the first method of its kind. This algorithm is implemented in an easy-to-use, documented command line tool for 2D and 3D ST data imputation. As part of the work, we measured performance of our method against scRNA-seq imputation methods, finding that our model outperformed all other models. This work was funded by an NSF Research Experience for Undergraduates (REU) supplement.</p>
+                  <p>Publications:</p>
+                  <ul>
+                  <li><b>Atkins TK</b>, Song T, Kuang R. <em>FIST-nD: A tool for n-dimensional spatial transcriptomics data imputation via graph-regularized tensor completion.</em> (Forthcoming).<br></li>
+                  <li><b>Atkins TK</b>, Song T, Kuang R. <a href="files/FIST-GT-poster.pdf"><em>FIST-GT: A tool for multidimensional spatial transcriptomics data imputation via graph-regularized tensor completion.</em></a> Presented at the University of Minnesota Bioinformatics and Computational Biology (BICB) Research Symposium. January 13, 2022.<br></li>
+                </ul>
                 </div>
               </div>
             </div>
@@ -50,9 +65,14 @@
                   </button>
                 </h5>
               </div>
-              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+              <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordion">
                 <div class="card-body">
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                  <p>During the summer of 2022, I worked in <a href="https://www.genome.gov/staff/Julie-Segre-PhD"> Dr. Julie Segre's</a> skin microbiome lab at the National Human Genome Research Institute. In this context, I learned how cross-collaboration between biologists and computational folks can lead to insights that would otherwise go unnoticed. At the NIH, I examined the impact of variant calling choices applied to samples of the emerging multidrug resistant fungal pathogen <em>Candida auris</em>. Utilizing my background in statistics and data visualization, I created a series of diagnostic plots that allowed us to diagnose errors in variant calling pipelines, which resulted in a series of discoveries about which steps in our pipeline were necessary. Furthermore, as a statistician, I was uneasy with the lack of experiments using ground truth data in fungal genomics, so I designed an analysis for the lab to preform once we received further sequencing data to validate our pipeline.</p>
+                  <p>Publications:</p>
+                  <ul>
+                  <li>Proctor DM, <b>Atkins TK</b>, Chen Q, Conlan S, Deming C, Samson SE, Hayden MK, Segre JA. <em>Integrating data types to understand the genomic epidemiology of the emerging fungal pathogen Candida auris.</em> Presented at: NHGRI Annual Retreat; October 14-15 2022; Natcher Conference Center, Bethesda, MD.<br></li>
+                  <li><b>Atkins TK</b>, Proctor DM, Deming C, Chen Q, Conlan SP, Segre JA. <em><a href="/files/fungal-genome-variant-callers-poster.pdf">Diagnostic Measures for Fungal Genome Variant Callers.</a></em> Poster session presented at: NIH Summer Poster Day; Aug. 3 2022; Virtual.<br></li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -64,9 +84,10 @@
                   </button>
                 </h5>
               </div>
-              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+              <div id="collapseThree" class="collapse show" aria-labelledby="headingThree" data-parent="#accordion">
                 <div class="card-body">
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                  <p><a href="https://promethease.com/">Promethease</a> is an online tool that provides reports of genomic variation to users who upload genotyping data from 23andMe or other services. To do this, Promethease uses data from the online open-source database SNPedia, which provides summaries and other metadata on common or high-impact human SNPs. </p>
+                  <p>However, Promethease is not free software (neither free as in speech nor free as in beer). Most concerningly, this limits the user's control over their data. Therefore, I have developed software I call <a href="https://github.com/ThomasKAtkins/TheModernPromethease">The Modern Promethease</a> for the advancement of open science that creates a report from a user's personal genome data and the SNPedia database, during which all genomic data are kept locally.</p>
                 </div>
               </div>
             </div>
@@ -78,9 +99,9 @@
                   </button>
                 </h5>
               </div>
-              <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#accordion">
+              <div id="collapse4" class="collapse show" aria-labelledby="heading4" data-parent="#accordion">
                 <div class="card-body">
-                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                  <p>As part of the course GCD 3485, I analyzed protein a protein of unknown function, FAM151A, to determine putative function and other characteristics using purely computational techniques (including but not limited to: sequence conservation analysis, ortholog hunting to reconstruct evolutionary history, mRNA and expression analysis, and protein structure prediction). A summary of the analysis was used to create <a href="https://wikipedia.org/wiki/FAM151A">FAM151A's Wikipedia page</a>, and the full results of the analysis can be found <a href="/files/FAM151A.pdf">here</a>.</p>
                 </div>
               </div>
             </div>
