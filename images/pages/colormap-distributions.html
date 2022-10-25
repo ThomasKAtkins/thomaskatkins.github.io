@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>About Me</title>
+        <title>Colormap Distributions</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
@@ -40,8 +40,8 @@
             <img src="/images/gallery/colormap-distributions.png" style="width:60%;">
             <p><a href="/images/gallery/colormap_distributions.pdf"><em>Download (vector graphics)</em></a></p>
         </div>
-        <p><em>(Short explanation: this is how uniform data will appear using the displayed colormaps.)</em></p>
-        <p>A plot displaying the "perceptual density" of three different colormaps, sampled from a uniform distribution. Due to the fact that <a href="https://en.wikipedia.org/wiki/RGB_color_model">computers</a> and <a href="https://en.wikipedia.org/wiki/CIECAM02">humans</a> process colors differently, many popular colormaps are not "perceptually uniform", that is, they change colors more quickly or more slowly in different regions. Here, we sample uniformly on three colormaps, and then plot where these samples fall on that colormap corrected to be perceptually uniform (in the CIECAM02-UCS space). We plot the colormaps <a href="https://bids.github.io/colormap/">viridis</a> (from matplotlib), <a href="https://www.mathworks.com/help/matlab/ref/jet.html">jet</a> (from MATLAB), and <a href="https://github.com/karthik/wesanderson">Zissou1</a> (from the wesanderson R package). Because viridis is designed with perceptual uniformity in mind, we see a uniform perceptual density. However, this is not the case for jet and Zissou1, making them poorly suited for data visualization.</p>
+        <p>A plot displaying the "perceptual density" of three different colormaps, sampled from a uniform distribution. Due to the fact that <a href="https://en.wikipedia.org/wiki/RGB_color_model">computers</a> and <a href="https://en.wikipedia.org/wiki/CIECAM02">humans</a> process colors differently, many popular colormaps are not "perceptually uniform", that is, they change colors more quickly or more slowly in different regions. Here, we sample uniformly on three colormaps, and then plot where these samples fall on that colormap corrected to be perceptually uniform (in the CIECAM02-UCS space). We plot the colormaps <a href="https://bids.github.io/colormap/">viridis</a> (from matplotlib), <a href="https://www.mathworks.com/help/matlab/ref/jet.html">jet</a> (from MATLAB), and <a href="https://github.com/karthik/wesanderson">Zissou1</a> (from the wesanderson R package). Because viridis is designed with perceptual uniformity in mind, we see a uniform perceptual density. However, this is not the case for jet and Zissou1, making them poorly suited for data visualization.</p><br>
+        <p><a href="https://pubmed.ncbi.nlm.nih.gov/22034369/">Studies have shown</a> that non-uniform colormaps lead to increased errors and reduced speed when making decisions based on data visualized with these colormaps. In recent years, MATLAB has changed its' default colormap from jet to parula, a viriidis-like colormap. However, the Zissou1 colormap is still commonly used in publications visualizing data in R. With this is mind, I have created a <a href="https://github.com/karthik/wesanderson/pull/44">pull request</a> to improve the colormap to improve the perceptual uniformity of the colormap.</p>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
