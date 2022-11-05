@@ -1,0 +1,12 @@
+https://thomaskatkins.github.io/index.html
+https://thomaskatkins.github.io/gallery.html
+https://thomaskatkins.github.io/projects.html
+https://thomaskatkins.github.io/xkcd.html
+https://thomaskatkins.github.io/images/pages/colormap-distributions.html
+https://thomaskatkins.github.io/images/pages/fam151a-conservation.html
+https://thomaskatkins.github.io/images/pages/fam151a-glow.html
+https://thomaskatkins.github.io/images/pages/fam151a-snps.html
+https://thomaskatkins.github.io/images/pages/genome-map.html
+https://thomaskatkins.github.io/images/pages/sun-trails.html
+https://thomaskatkins.github.io/images/pages/tree-of-life.html
+https://thomaskatkins.github.io/images/pages/vc-diagnostic-plot.html
