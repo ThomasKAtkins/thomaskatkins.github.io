@@ -39,7 +39,7 @@ body {
 }
 
 .caro-label {
-  color:#1f0b2f;
+  color:#503d61;
 }
 
 .card-header {
@@ -57,4 +57,8 @@ body {
 
 .card {
     background-color: #eee !important;
+}
+
+.navbar {
+  background-color: #503d61 !important;
 }
